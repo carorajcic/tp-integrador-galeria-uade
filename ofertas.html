@@ -19,8 +19,6 @@
   </head>
   <body>
     <a href="#ofertas-main" class="skip-link">Saltar al contenido principal</a>
-
-    <!-- Header -->
     <header class="main-header">
         <div class="container">
           <div class="logo">
@@ -51,7 +49,6 @@
       </header>
 
     <main id="ofertas-main">
-      <!-- Page Header -->
       <section class="page-header">
         <div class="container">
           <span class="section-badge">🎁 Promociones Especiales</span>
@@ -62,7 +59,6 @@
         </div>
       </section>
 
-      <!-- Filtros -->
       <section class="filtros-section">
         <div class="container">
           <div class="filtros-container">
@@ -91,7 +87,6 @@
         </div>
       </section>
 
-      <!-- Ofertas Destacadas -->
       <section class="ofertas-destacadas">
         <div class="container">
           <div class="section-header">
@@ -117,9 +112,9 @@
                 </p>
                 <div class="oferta-detalles">
                   <span class="oferta-validez"
-                    >⏰ Válido hasta: 31/12/2024</span
+                    >Válido hasta: 31/12/2024</span
                   >
-                  <span class="oferta-local">📍 Piso 1 - Local 10</span>
+                  <span class="oferta-local">Piso 1 - Local 10</span>
                 </div>
               </div>
             </article>
@@ -143,9 +138,9 @@
                 </p>
                 <div class="oferta-detalles">
                   <span class="oferta-validez"
-                    >⏰ Válido hasta: 25/12/2024</span
+                    >Válido hasta: 25/12/2024</span
                   >
-                  <span class="oferta-local">📍 Piso 2 - Local 22</span>
+                  <span class="oferta-local">Piso 2 - Local 22</span>
                 </div>
               </div>
             </article>
@@ -153,7 +148,6 @@
         </div>
       </section>
 
-      <!-- Lista de Promociones -->
       <section class="ofertas-lista">
         <div class="container">
           <h3>Todas las Promociones</h3>
@@ -171,13 +165,12 @@
                   oportunidad única.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 20/12</span>
-                  <span>📍 Local 15</span>
+                  <span>Hasta 20/12</span>
+                  <span>Local 15</span>
                 </div>
               </div>
             </article>
 
-            <!-- Oferta 2 -->
             <article class="oferta-card" data-categoria="deportes">
               <div class="oferta-header">
                 <span class="oferta-descuento">35% OFF</span>
@@ -190,13 +183,12 @@
                   tu entrenamiento.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 30/12</span>
-                  <span>📍 Local 08</span>
+                  <span>Hasta 30/12</span>
+                  <span>Local 08</span>
                 </div>
               </div>
             </article>
 
-            <!-- Oferta 3 -->
             <article class="oferta-card" data-categoria="hogar">
               <div class="oferta-header">
                 <span class="oferta-descuento">25% OFF</span>
@@ -209,13 +201,12 @@
                   especial a tu casa.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 31/12</span>
-                  <span>📍 Local 25</span>
+                  <span>Hasta 31/12</span>
+                  <span>Local 25</span>
                 </div>
               </div>
             </article>
 
-            <!-- Oferta 4 -->
             <article class="oferta-card" data-categoria="moda">
               <div class="oferta-header">
                 <span class="oferta-descuento">2x1</span>
@@ -228,13 +219,12 @@
                   precio.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 15/12</span>
-                  <span>📍 Local 30</span>
+                  <span>Hasta 15/12</span>
+                  <span>Local 30</span>
                 </div>
               </div>
             </article>
 
-            <!-- Oferta 5 -->
             <article class="oferta-card" data-categoria="tecnologia">
               <div class="oferta-header">
                 <span class="oferta-descuento">20% OFF</span>
@@ -247,13 +237,12 @@
                   digital.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 31/12</span>
-                  <span>📍 Local 18</span>
+                  <span>Hasta 31/12</span>
+                  <span>Local 18</span>
                 </div>
               </div>
             </article>
 
-            <!-- Oferta 6 -->
             <article class="oferta-card" data-categoria="moda">
               <div class="oferta-header">
                 <span class="oferta-descuento">15% OFF</span>
@@ -265,8 +254,8 @@
                   Accesorios y joyas para esta temporada. Regalos perfectos.
                 </p>
                 <div class="oferta-meta">
-                  <span>⏰ Hasta 24/12</span>
-                  <span>📍 Local 05</span>
+                  <span>Hasta 24/12</span>
+                  <span>Local 05</span>
                 </div>
               </div>
             </article>
@@ -274,7 +263,6 @@
         </div>
       </section>
 
-      <!-- Beneficios Adicionales -->
       <section class="beneficios-section">
     <div class="container">
         <div class="section-header">
@@ -316,7 +304,6 @@
 </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-grid">
@@ -403,11 +390,9 @@
         );
         const botones = document.querySelectorAll(".filtro-btn");
 
-        // Actualizar botones activos
         botones.forEach((btn) => btn.classList.remove("active"));
         event.target.classList.add("active");
 
-        // Filtrar ofertas
         ofertas.forEach((oferta) => {
           const categoriaOferta = oferta.getAttribute("data-categoria");
 
