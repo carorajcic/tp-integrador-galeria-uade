@@ -1,0 +1,149 @@
+.gastronomy-header {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  background-color: var(--color-secondary-dark);
+  color: var(--color-accent-light);
+}
+
+.gastronomy-header h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.gastronomy-header p {
+  font-size: 1.2rem;
+}
+
+.gastronomy-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.gastro-card {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gastro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(198, 40, 40, 0.2);
+}
+
+.gastro-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.burgerking-bg {
+  background-image: url("../img/burgerking.jpeg");
+}
+
+.cafe-bg {
+  background-image: url("../img/starbucks.jpg");
+}
+
+.sushi-bg {
+  background-image: url("https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800");
+}
+
+.pasteleria-bg {
+  background-image: url("../img/cheesecake.jpg");
+}
+
+.mcdonalds-bg {
+  background-image: url("../img/mcdonalds.jpg");
+}
+
+.helados-bg {
+  background-image: url("../img/freddo.jpg");
+}
+
+/* Capa oscura */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  z-index: 2;
+}
+
+/* Contenido */
+.gastro-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: var(--color-light);
+}
+
+.gastro-content .badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 16px;
+  background: rgba(198, 40, 40, 0.9);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.gastro-content h3 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.gastro-content p {
+  color: var(--color-light);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 90%;
+}
+
+.btn {
+  width: fit-content;
+  padding: 12px 28px;
+  background: var(--color-primary);
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .gastronomy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gastro-card {
+    height: 400px;
+  }
+
+  .gastro-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .gastro-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gastronomy-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .gastronomy-header p {
+    font-size: 1rem;
+  }
+}
