@@ -212,23 +212,23 @@
 }
 
 .oferta-tag {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(0 0 0 / 20%);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: var(--color-light);
+  color: #000000;
 }
 
 .oferta-tag.deportes {
-  background: rgba(0, 184, 148, 0.3);
+  background: rgb(0 184 148 / 60%);
 }
 
 .oferta-tag.hogar {
-  background: rgba(253, 203, 110, 0.3);
+  background: rgb(253 203 110 / 75%);
 }
 
 .oferta-tag.tecnologia {
-  background: rgba(116, 185, 255, 0.3);
+  background: rgb(116 185 255 / 77%);
 }
 
 .oferta-body {
