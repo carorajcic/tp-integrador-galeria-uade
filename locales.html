@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Locales comerciales de las Galerías Atlántico - Descubre todas nuestras tiendas"
+    />
+    <title>Locales | Galerías Pacifico</title>
+    <link rel="stylesheet" href="css/locales.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a href="#ofertas-main" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1>Galerías Atlántico</h1>
+        </div>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li>
+              <a href="entretenimiento.html" class="nav-link"
+                >Entretenimiento</a
+              >
+            </li>
+            <li><a href="locales.html" class="nav-link active">Locales</a></li>
+            <li><a href="ofertas.html" class="nav-link">Ofertas</a></li>
+            <li><a href="gastronomia.html" class="nav-link">Gastronomía</a></li>
+            <li>
+              <a href="contacto.html" class="nav-link cta-nav">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="locales-main">
+      <section class="page-header">
+        <div class="container">
+          <h2>Nuestros Locales</h2>
+          <p class="page-description">Descubrí todos nuestros locales</p>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="container">
+          <div class="search-box">
+            <div class="search-bar">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Nombre del local, categoría, piso..."
+                aria-label="Buscar local"
+              />
+              <button class="search-button" onclick="buscarLocal()">
+                Buscar <span class="search-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marcas-section">
+        <div class="container">
+          <div class="marcas-container">
+            <a
+              class="marca-card"
+              data-local="apple"
+              href="https://www.apple.com/ar/"
+              target="_blank"
+            >
+              <img src="img/apple.svg" alt="Apple" />
+              <span>Apple</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="burger-king"
+              href="https://www.burgerking.com.ar/"
+              target="_blank"
+            >
+              <img src="img/burgerking.svg" alt="Burger King" />
+              <span>Burger King</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="starbucks"
+              href="https://www.starbucks.com.ar/"
+              target="_blank"
+            >
+              <img src="img/starbucks.svg" alt="Starbucks" />
+              <span>Starbucks</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="carito-pasteles"
+              href="https://ramirokreimisuade.github.io/PasteleriaCarito/productos.html"
+              target="_blank"
+            >
+              <img src="img/caritopasteles.png" alt="Carito Pasteles" />
+              <span>Carito Pasteles</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="decohome"
+              href="https://carorajcic.github.io/homedeco-uade/"
+              target="_blank"
+            >
+              <span>decohome</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="sushi-pop"
+              href="https://www.sushipop.com.ar/"
+              target="_blank"
+            >
+              <img src="img/sushipop.png" alt="Sushi Pop" />
+              <span>Sushi Pop</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="RAM"
+              href="https://cristianrojas12.github.io/LOCAL_COMERCIAL/RAM_web/index/index.html"
+              target="_blank"
+            >
+              <span>RAM</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="mc-donalds"
+              href="https://www.mcdonalds.com.ar/"
+              target="_blank"
+            >
+              <img src="img/mcdonalds.svg" alt="Mc Donald's" />
+              <span>Mc Donald's</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="INK"
+              href="https://eskiu.github.io/UADE-DyDW-TPObligatorio01/"
+              target="_blank"
+            >
+              <img src="img/ink.svg" alt="INK" />
+              <span>INK</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="nike"
+              href="https://www.nike.com.ar/"
+              target="_blank"
+            >
+              <img src="img/nike.svg" alt="Nike" />
+              <span>Nike</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="adidas"
+              href="https://www.adidas.com.ar/"
+              target="_blank"
+            >
+              <img src="img/adidas.svg" alt="Adidas" />
+              <span>Adidas</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="northface"
+              href="https://www.thenorthface.com.ar/"
+              target="_blank"
+            >
+              <img src="img/northface.svg" alt="Northface" />
+              <span>Northface</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="versace"
+              href="https://www.versace.com/"
+              target="_blank"
+            >
+              <img src="img/versace.svg" alt="Versace" />
+              <span>Versace</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="freddo"
+              href="https://ar.freddo.com/"
+              target="_blank"
+            >
+              <img src="img/freddo.png" alt="Freddo" />
+              <span>Freddo</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="dji"
+              href="https://www.dji.com/"
+              target="_blank"
+            >
+              <img src="img/dji.svg" alt="DJI" />
+              <span>DJI</span>
+            </a>
+            <a
+              class="marca-card"
+              data-local="ferreteria-9dejulio"
+              href="https://emanueldiaz-uade.github.io/ferreteria-9dejulio-promos/"
+              target="_blank"
+            >
+              <img
+                src="img/ferreteria9dejulio.svg"
+                alt="Ferreteria 9 de Julio"
+              />
+              <span>Ferreteria 9 de Julio</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mapa-section">
+        <div class="container">
+          <h3>Mapa de la galería</h3>
+          <div class="mapa-container">
+            <div class="mapa-placeholder">
+              <div class="container-img">
+                <img src="img/plano-shopping.png" alt="Mapa del Shopping" />
+                <div
+                  class="map-point"
+                  style="top: 0%; left: 67%"
+                  onclick="mostrarLocal(0)"
+                ></div>
+                <div
+                  class="map-point"
+                  style="top: 60%; left: 90%"
+                  onclick="mostrarLocal(1)"
+                ></div>
+                <div
+                  class="map-point"
+                  style="top: 80%; left: 68%"
+                  onclick="mostrarLocal(2)"
+                ></div>
+                <div
+                  class="map-point"
+                  style="top: 80%; left: 85%"
+                  onclick="mostrarLocal(3)"
+                ></div>
+                <div
+                  class="map-point"
+                  style="top: 55%; left: 20%"
+                  onclick="mostrarLocal(4)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="local-info" id="localInfo">
+          <button class="close-local-info" onclick="cerrarLocalInfo()" aria-label="Cerrar información del local">×</button>
+          <img src="" id="localImagen" alt="Carito Pasteles" />
+          <div class="local-info-content">
+            <h4 id="localNombre"></h4>
+            <div class="local-info-item">
+              <span class="info-label">Ubicación:</span>
+              <span id="localUbicacion"></span>
+            </div>
+            <div class="local-info-item">
+              <span class="info-label">Horarios:</span>
+              <span id="localHorarios"></span>
+            </div>
+            <a href="" id="localWebsite" target="_blank">Ir al website</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="locales-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h3>¿Querés abrir tu local en nuestra galería?</h3>
+            <p>
+              Sumate a la familia de las Galerías Atlántico y llevá tu negocio
+              al siguiente nivel
+            </p>
+            <a href="contacto.html" class="cta-button"> Contactanos </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <h3>Galerías Atlántico</h3>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="social-link"
+              >
+                <span
+                  ><img
+                    src="img/facebook.png"
+                    alt="Ícono de Facebook"
+                    class="social-logo"
+                /></span>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="social-link"
+              >
+                <span
+                  ><img
+                    src="img/instagram.png"
+                    alt="Ícono de Instagram"
+                    class="social-logo"
+                /></span>
+              </a>
+              <a
+                href="https://www.x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                class="social-link"
+              >
+                <span
+                  ><img src="img/x.png" alt="Ícono de X" class="social-logo"
+                /></span>
+              </a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="social-link"
+              >
+                <span
+                  ><img
+                    src="img/youtube.png"
+                    alt="Ícono de YouTube"
+                    class="social-logo"
+                /></span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="entretenimiento.html">Entretenimiento</a></li>
+              <li><a href="locales.html">Locales</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Descubrí</h4>
+            <ul>
+              <li><a href="ofertas.html">Ofertas</a></li>
+              <li><a href="gastronomia.html">Gastronomía</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Suscribite y recibí las últimas novedades</p>
+            <form
+              class="newsletter-form"
+              aria-label="Formulario de suscripción"
+            >
+              <input
+                type="email"
+                placeholder="Tu email"
+                aria-label="Correo electrónico"
+                required
+              />
+              <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Galería. Todos los derechos reservados.</p>
+          <p class="footer-credits">Desarrollado por <strong>...</strong></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function buscarLocal() {
+        const input = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const marcas = document.querySelectorAll(".marca-card");
+
+        marcas.forEach((marca) => {
+          const texto = marca.textContent.toLowerCase();
+          if (texto.includes(input)) {
+            marca.style.display = "flex";
+            marca.style.border = "3px solid var(--color-primary)";
+          } else {
+            marca.style.display = input ? "none" : "flex";
+            marca.style.border = "2px solid var(--color-primary)";
+          }
+        });
+      }
+
+      const locales = [
+        {
+          nombre: "Carito Pasteles",
+          ubicacion: "Local 202 - Sector Gastronomía",
+          horarios:
+            "Lunes a Sábados: 10:00 - 21:00hs | Domingos: 11:00 - 20:00hs",
+          imagen: "img/caritopasteles.png",
+          website: "https://ramirokreimisuade.github.io/PasteleriaCarito/productos.html",
+        },
+        {
+          nombre: "decohome",
+          ubicacion: "Local 265 - Sector Decoración",
+          horarios: "Lunes a Domingos: 10:00 - 21:00hs",
+          website: "https://carorajcic.github.io/homedeco-uade/",
+        },
+        {
+          nombre: "RAM",
+          ubicacion: "Local 308 - Sector Informática",
+          horarios:
+            "Lunes a Viernes: 09:00 - 20:00hs | Sábados y Domingos: 10:00 - 19:00hs",
+          website: "https://cristianrojas12.github.io/LOCAL_COMERCIAL/RAM_web/index/index.html",
+        },
+        {
+          nombre: "Ferreteria 9 de Julio",
+          ubicacion: "Local 125 - Sector Herramientas",
+          horarios:
+            "Lunes a Viernes: 09:00 - 20:00hs | Sábados y Domingos: 10:00 - 19:00hs",
+          imagen: "img/ferreteria9dejulio.svg",
+          website: "https://emanueldiaz-uade.github.io/ferreteria-9dejulio-promos/",
+        },
+        {
+          nombre: "INK",
+          ubicacion: "Local 102 - Sector Educativo",
+          horarios:
+            "Lunes a Viernes: 09:00 - 20:00hs | Sábados y Domingos: 10:00 - 19:00hs",
+          imagen: "img/ink.svg",
+          website: "https://eskiu.github.io/UADE-DyDW-TPObligatorio01/",
+        },
+      ];
+
+      function mostrarLocal(numero) {
+        const puntos = document.querySelectorAll(".map-point");
+        for (let i = 0; i < puntos.length; i++) {
+          puntos[i].classList.remove("active");
+        }
+
+        puntos[numero].classList.add("active");
+
+        const local = locales[numero];
+        const imagenElement = document.getElementById("localImagen");
+        
+        document.getElementById("localNombre").textContent = local.nombre;
+        document.getElementById("localUbicacion").textContent = local.ubicacion;
+        document.getElementById("localHorarios").textContent = local.horarios;
+        
+        if (local.imagen) {
+          imagenElement.src = local.imagen;
+          imagenElement.style.display = "block";
+          imagenElement.alt = local.nombre;
+        } else {
+          imagenElement.style.display = "none";
+        }
+        
+        document.getElementById("localWebsite").href = local.website;
+        document.getElementById("localInfo").classList.add("active");
+        document.getElementById("localInfo").scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+        });
+      }
+
+      function cerrarLocalInfo() {
+        const localInfoElement = document.getElementById("localInfo");
+        localInfoElement.classList.remove("active");
+        
+        const puntos = document.querySelectorAll(".map-point");
+        puntos.forEach(punto => punto.classList.remove("active"));
+      }
+    </script>
+  </body>
+</html>

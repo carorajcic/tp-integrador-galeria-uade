@@ -7,7 +7,7 @@
       name="description"
       content="Ofertas y promociones de la Galería Navideña - Los mejores descuentos"
     />
-    <title>Ofertas | Galería Navideña</title>
+    <title>Ofertas | Galerías Pacifico</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/ofertas.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,38 +20,37 @@
   <body>
     <a href="#ofertas-main" class="skip-link">Saltar al contenido principal</a>
     <header class="main-header">
-        <div class="container">
-          <div class="logo">
-            <h1>Galería Atlántico</h1>
-          </div>
-          <nav
-            class="main-nav"
-            role="navigation"
-            aria-label="Navegación principal"
-          >
-            <ul>
-              <li><a href="index.html" class="nav-link">Inicio</a></li>
-              <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-              <li>
-                <a href="entretenimiento.html" class="nav-link"
-                  >Entretenimiento</a
-                >
-              </li>
-              <li><a href="locales.html" class="nav-link">Locales</a></li>
-              <li><a href="ofertas.html" class="nav-link active">Ofertas</a></li>
-              <li><a href="gastronomia.html" class="nav-link">Gastronomía</a></li>
-              <li>
-                <a href="contacto.html" class="nav-link cta-nav">Contacto</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container">
+        <div class="logo">
+          <h1>Galerías Atlántico</h1>
         </div>
-      </header>
+        <nav
+          class="main-nav"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
+          <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li>
+              <a href="entretenimiento.html" class="nav-link"
+                >Entretenimiento</a
+              >
+            </li>
+            <li><a href="locales.html" class="nav-link">Locales</a></li>
+            <li><a href="ofertas.html" class="nav-link active">Ofertas</a></li>
+            <li><a href="gastronomia.html" class="nav-link">Gastronomía</a></li>
+            <li>
+              <a href="contacto.html" class="nav-link cta-nav">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main id="ofertas-main">
       <section class="page-header">
         <div class="container">
-          <span class="section-badge">🎁 Promociones Especiales</span>
           <h2>Ofertas</h2>
           <p class="page-description">
             Los mejores descuentos en tus marcas favoritas
@@ -71,16 +70,16 @@
                 Todas las Promociones
               </button>
               <button class="filtro-btn" onclick="filtrarOfertas('moda')">
-                👗 Moda
+                Moda
               </button>
               <button class="filtro-btn" onclick="filtrarOfertas('tecnologia')">
-                📱 Tecnología
+                Tecnología
               </button>
               <button class="filtro-btn" onclick="filtrarOfertas('hogar')">
-                🏠 Hogar
+                Hogar
               </button>
               <button class="filtro-btn" onclick="filtrarOfertas('deportes')">
-                ⚽ Deportes
+                Deportes
               </button>
             </div>
           </div>
@@ -90,7 +89,7 @@
       <section class="ofertas-destacadas">
         <div class="container">
           <div class="section-header">
-            <h3>⭐ Ofertas Destacadas de la Semana</h3>
+            <h3>Ofertas Destacadas de la Semana</h3>
           </div>
           <div class="ofertas-grid-destacadas">
             <article class="oferta-card-grande" data-categoria="moda">
@@ -101,19 +100,16 @@
                   background: linear-gradient(135deg, #ff6b6b 0%, #c44569 100%);
                 "
               >
-                <span class="oferta-emoji">👗</span>
+                <img src="img/nike.svg" alt="Nike" />
               </div>
               <div class="oferta-content">
-                <span class="oferta-categoria">Moda</span>
-                <h4>Desaguar</h4>
+                <span class="oferta-tag moda">Moda</span>
+                <h4>Nike</h4>
                 <p class="oferta-descripcion">
-                  50% de descuento en toda la colección de invierno. Remeras,
-                  pantalones, camperas y más.
+                  50% de descuento en toda la colección de invierno.
                 </p>
                 <div class="oferta-detalles">
-                  <span class="oferta-validez"
-                    >Válido hasta: 31/12/2024</span
-                  >
+                  <span class="oferta-validez">Válido hasta: 31/12/2024</span>
                   <span class="oferta-local">Piso 1 - Local 10</span>
                 </div>
               </div>
@@ -127,19 +123,17 @@
                   background: linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%);
                 "
               >
-                <span class="oferta-emoji">📱</span>
+                <img src="img/apple.svg" alt="Apple" />
               </div>
               <div class="oferta-content">
-                <span class="oferta-categoria">Tecnología</span>
-                <h4>Little Akihabara</h4>
+                <span class="oferta-tag tecnologia">Tecnología</span>
+                <h4>Apple</h4>
                 <p class="oferta-descripcion">
-                  Hasta 30% de descuento en smartphones, tablets y accesorios
+                  Hasta 30% de descuento en iPhones, iPads y accesorios
                   tecnológicos de última generación.
                 </p>
                 <div class="oferta-detalles">
-                  <span class="oferta-validez"
-                    >Válido hasta: 25/12/2024</span
-                  >
+                  <span class="oferta-validez">Válido hasta: 25/12/2024</span>
                   <span class="oferta-local">Piso 2 - Local 22</span>
                 </div>
               </div>
@@ -152,14 +146,13 @@
         <div class="container">
           <h3>Todas las Promociones</h3>
           <div class="ofertas-grid">
-            <!-- Oferta 1 -->
             <article class="oferta-card" data-categoria="moda">
               <div class="oferta-header">
                 <span class="oferta-descuento">40% OFF</span>
                 <span class="oferta-tag">Moda</span>
               </div>
               <div class="oferta-body">
-                <h4>Style Store</h4>
+                <h4>The North Face</h4>
                 <p>
                   Ropa deportiva y urbana con 40% de descuento. Aprovechá esta
                   oportunidad única.
@@ -177,7 +170,7 @@
                 <span class="oferta-tag deportes">Deportes</span>
               </div>
               <div class="oferta-body">
-                <h4>Garmin</h4>
+                <h4>Nike</h4>
                 <p>
                   Relojes inteligentes y accesorios deportivos. Tecnología para
                   tu entrenamiento.
@@ -195,7 +188,7 @@
                 <span class="oferta-tag hogar">Hogar</span>
               </div>
               <div class="oferta-body">
-                <h4>DecoHome</h4>
+                <h4>decohome</h4>
                 <p>
                   Decoración navideña y accesorios para el hogar. Dale un toque
                   especial a tu casa.
@@ -213,7 +206,7 @@
                 <span class="oferta-tag">Moda</span>
               </div>
               <div class="oferta-body">
-                <h4>Zapatería Premium</h4>
+                <h4>Zara</h4>
                 <p>
                   2x1 en calzado seleccionado. Las mejores marcas al mejor
                   precio.
@@ -228,13 +221,13 @@
             <article class="oferta-card" data-categoria="tecnologia">
               <div class="oferta-header">
                 <span class="oferta-descuento">20% OFF</span>
-                <span class="oferta-tag tecnologia">Tech</span>
+                <span class="oferta-tag tecnologia">Tecnología</span>
               </div>
               <div class="oferta-body">
-                <h4>TechHub</h4>
+                <h4>DJI</h4>
                 <p>
-                  Auriculares, cargadores y accesorios tech. Equipá tu vida
-                  digital.
+                  Equipá tu vida digital con 20% de descuento en laptops y
+                  accesorios tecnológicos.
                 </p>
                 <div class="oferta-meta">
                   <span>Hasta 31/12</span>
@@ -249,7 +242,7 @@
                 <span class="oferta-tag">Moda</span>
               </div>
               <div class="oferta-body">
-                <h4>Joyería Elegance</h4>
+                <h4>Versace</h4>
                 <p>
                   Accesorios y joyas para esta temporada. Regalos perfectos.
                 </p>
@@ -264,44 +257,44 @@
       </section>
 
       <section class="beneficios-section">
-    <div class="container">
-        <div class="section-header">
+        <div class="container">
+          <div class="section-header">
             <h3>Beneficios con Tarjetas</h3>
             <p>Descuentos adicionales pagando con tu tarjeta preferida</p>
+          </div>
+
+          <div class="beneficios-grid">
+            <div class="beneficio-card">
+              <div class="beneficio-icon">
+                <img src="img/logo-banco-nacion.jpg" alt="Banco Nación" />
+              </div>
+              <h4>Banco Nación</h4>
+              <p>10% de descuento adicional</p>
+              <span class="beneficio-detalle">Todos los lunes y martes</span>
+            </div>
+
+            <div class="beneficio-card">
+              <div class="beneficio-icon">
+                <img src="img/logo-visa.png" alt="Visa" />
+              </div>
+              <h4>Visa</h4>
+              <p>6 cuotas sin interés</p>
+              <span class="beneficio-detalle"
+                >En compras superiores a $50.000</span
+              >
+            </div>
+
+            <div class="beneficio-card">
+              <div class="beneficio-icon">
+                <img src="img/logo-mastercard.png" alt="Mastercard" />
+              </div>
+              <h4>Mastercard</h4>
+              <p>15% de reintegro</p>
+              <span class="beneficio-detalle">Miércoles de cada semana</span>
+            </div>
+          </div>
         </div>
-
-        <div class="beneficios-grid">
-
-            <div class="beneficio-card">
-                <div class="beneficio-icon">
-                    <img src="img/logo-banco-nacion.jpg" alt="Banco Nación">
-                </div>
-                <h4>Banco Nación</h4>
-                <p>10% de descuento adicional</p>
-                <span class="beneficio-detalle">Todos los lunes y martes</span>
-            </div>
-
-            <div class="beneficio-card">
-                <div class="beneficio-icon">
-                    <img src="img/logo-visa.png" alt="Visa">
-                </div>
-                <h4>Visa</h4>
-                <p>6 cuotas sin interés</p>
-                <span class="beneficio-detalle">En compras superiores a $50.000</span>
-            </div>
-
-            <div class="beneficio-card">
-                <div class="beneficio-icon">
-                    <img src="img/logo-mastercard.png" alt="Mastercard">
-                </div>
-                <h4>Mastercard</h4>
-                <p>15% de reintegro</p>
-                <span class="beneficio-detalle">Miércoles de cada semana</span>
-            </div>
-
-        </div>
-    </div>
-</section>
+      </section>
     </main>
 
     <footer class="main-footer">

@@ -249,7 +249,7 @@ a {
     border: 2px solid var(--color-light);
     border-radius: 8px;
     background: var(--color-light);
-    color: var(--color-text);
+    color: var(--text-dark);
     font-family: var(--font-primary);
 }
 
