@@ -1,0 +1,79 @@
+
+.activities .activity {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.activity-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.cinemark {
+    background-image: url("../img/cine.jpg");
+}
+
+.hielo {
+    background-image: url("../img/patinaje.jpg");
+}
+
+.santa {
+    background-image: url("../img/papa_noel.jpg");
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--overlay);
+    z-index: 2;
+}
+
+.activity-content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    padding: 20px;
+    color: var(--color-light);
+}
+
+.activity-content h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.activity-content p {
+    color: var(--color-light);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;   
+    width: auto;             
+    padding: 12px 28px;
+    background: var(--color-primary);
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .activity-content h2 {
+        font-size: 2.2rem;
+    }
+    .activity-content p {
+        font-size: 1rem;
+    }
+}
