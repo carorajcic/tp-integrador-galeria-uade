@@ -19,4 +19,3 @@ function filtrarOfertas(categoria) {
         }
     });
 }
-
